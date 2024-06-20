@@ -6,7 +6,7 @@
 #    By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/20 18:23:13 by fcorvaro          #+#    #+#              #
-#    Updated: 2024/06/20 19:22:33 by fcorvaro         ###   ########.fr        #
+#    Updated: 2024/06/20 19:27:09 by fcorvaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -141,7 +141,7 @@ clean:
 # ------------  FCLEAN TARGET  ----------------------------------------------- #
 fclean: clean
 	@make -s fclean -sC $(LIBFTPRINTF_DIR)
-	@$(RM) -f $(MINILIBX)
+	@$(RM) $(MINILIBX)
 	@if [ -f "$(BUILD)" ]; then \
 		$(RM) $(BUILD); \
 		echo "$(START)$(BOLD);$(ITALIC);$(G)m Cleaned up executable file. $(BUILD) has been removed. $(END)"; \
