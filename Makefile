@@ -6,7 +6,7 @@
 #    By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/20 18:23:13 by fcorvaro          #+#    #+#              #
-#    Updated: 2024/06/20 19:27:09 by fcorvaro         ###   ########.fr        #
+#    Updated: 2024/06/20 19:32:03 by fcorvaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -110,7 +110,7 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
 .PHONY : all clean fclean re bonus norm makelibs help system_info
 
 system_info:
-	@echo "$(START)$(BOLD);$(ITALIC);$(G)m Compiled for $(UNAME_S)!$(END)"
+	@echo "$(START)$(BOLD);$(ITALIC);$(BE)m $(NAME) Compiled for $(UNAME_S)!$(END)"
 
 # ------------  BUILD LIBRARIES  --------------------------------------------- #
 makelibs:
@@ -121,7 +121,7 @@ makelibs:
 $(NAME): $(OBJS)
 	@$(CC) $(CFLAGS) $(LEAKS) $(OBJS) $(MINILIBXCC) -o $(NAME) $(INCLUDE) $(LIBRARIES)
 	@echo "$(START)$(BOLD);$(ITALIC);$(G)m Compilation of $(NAME) completed successfully!$(END)"
-	@echo "$(START)$(BOLD);$(ITALIC);$(BE)m To run the program, use: ./$(BUILD) <map_file>$(END)"
+	@echo "$(START)$(BOLD);$(ITALIC);$(C)m To run the program, use: ./$(BUILD) <map_file>$(END)"
 	@echo "  - $(START)$(BOLD);$(ITALIC);$(Y)mmap_file$(END): The file containing the map for the 3D environment."
 	@echo "$(START)$(BOLD);$(ITALIC);$(M)m Authors: fcorvaro & fursini$(END)"
 	
