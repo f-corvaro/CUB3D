@@ -6,13 +6,13 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 19:09:12 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/20 19:12:22 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/06/20 19:22:05 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-int	main()
+int	main(void)
 {
 	ft_printf("Hello, World!\n");
 	return (0);

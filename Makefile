@@ -6,7 +6,7 @@
 #    By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/20 18:23:13 by fcorvaro          #+#    #+#              #
-#    Updated: 2024/06/20 18:58:21 by fcorvaro         ###   ########.fr        #
+#    Updated: 2024/06/20 19:22:33 by fcorvaro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -162,7 +162,7 @@ help:
 	@echo "  make [command]"
 	@echo ""
 	@echo "  $(START)$(BOLD);$(Y)mall\t\tCompile the project$(END)"
-	@echo "  $(START)$(BOLD);$(Y)mbonus\t\tDisplay the location of the bonus$(END)"
+	@echo "  $(START)$(BOLD);$(Y)mbonus\t\t$(END)"
 	@echo "  $(START)$(BOLD);$(Y)mclean\t\tRemove object files$(END)"
 	@echo "  $(START)$(BOLD);$(Y)mfclean\tRemove object files and the executable$(END)"
 	@echo "  $(START)$(BOLD);$(Y)mnorm\t\tCheck the code with Norminette$(END)"
@@ -170,15 +170,12 @@ help:
 	@echo "  $(START)$(BOLD);$(Y)mhelp\t\tDisplay this help message$(END)"
 	@echo ""
 	@echo "  $(START)$(BOLD);$(M)mProject Description:$(END)"
-	@echo "  This project, known as 'Philosophers', is a classic concurrency problem"
-	@echo "  implemented in C. The program simulates a number of philosophers sitting"
-	@echo "  around a round table, each philosopher has a fork between them and the"
-	@echo "  philosopher next to them. Each philosopher alternates between thinking,"
-	@echo "  eating, and sleeping. A philosopher needs both forks to eat, and must"
-	@echo "  put them down after eating. The challenge is to avoid deadlock and ensure"
-	@echo "  that no philosopher goes without eating and dies."
-	@echo "  The project demonstrates understanding of multithreading, mutexes,"
-	@echo "  and semaphores."
+	@echo "  This project, known as 'cub3d', is a graphic project inspired by the world-famous"
+	@echo "  90's game and the first FPS ever - Wolfenstein 3D. The project is implemented in C"
+	@echo "  using the MiniLibX library. The program takes a map as an argument, which describes"
+	@echo "  the walls and spaces of the game, and renders a 3D view from the player's perspective."
+	@echo "  The project demonstrates understanding of ray-casting, event handling, and basic"
+	@echo "  graphics programming."
 
 # ------------  NORM TARGET  ------------------------------------------------- #
 norm:
