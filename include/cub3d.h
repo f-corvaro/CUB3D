@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 19:09:34 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/25 22:27:24 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/06/26 22:44:26 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@
 
 /* ------------  HEADER FILE INCLUDED  -------------------------------------- */
 
+# include "error_messages.h"
 # include "functions.h"
 # include "key_mapping.h"
 # include "resolution_config.h"

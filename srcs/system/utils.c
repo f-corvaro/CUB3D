@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/20 19:09:12 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/26 22:47:57 by fcorvaro         ###   ########.fr       */
+/*   Created: 2024/06/26 22:01:48 by fcorvaro          #+#    #+#             */
+/*   Updated: 2024/06/26 22:36:53 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
-int	main(int ac, char **av)
+/**
+ * @brief Terminates the game and outputs an error message.
+ * 
+ * 
+ * @param msg The error message to be displayed on termination.
+ * @param cub Pointer to the game engine's main structure for accessing game 
+ * resources during cleanup.
+ */
+void	terminate(char *msg, t_engine *cub)
 {
-	t_engine	cub;
-
-	/*something to init cub*/
-	if (ac != 2)
-		terminate(ERROR_MSG_INVALID_ARGS, &cub);
-	else
-	{
-		/*something to check if the map is valid*/
-		/*something to load the map*/
-		/*something to start the game*/
-	}
+	ft_putstr_fd(ft_strjoin(msg, "\n"), STDERR_FILENO);
+	/*function to clean and terminate the game*/
 }
