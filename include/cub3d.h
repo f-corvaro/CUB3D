@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 19:09:34 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/26 22:44:26 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/06/29 12:57:00 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@
 # include <stdlib.h>
 # include <sys/time.h>
 # include <unistd.h>
+# include <stdbool.h>
 
 /* ------------  HEADER FILE INCLUDED  -------------------------------------- */
 
