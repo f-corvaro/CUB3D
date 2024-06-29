@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 22:55:49 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/29 15:26:25 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/06/29 15:39:54 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,6 @@ void	init_cube_values(t_cube *cube)
  *
  * @param cube Struct with game data
  */
-
 void	init_textures(t_cube *cube)
 {
 	cube->texture[0].img = NULL;

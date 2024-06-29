@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 22:25:42 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/29 15:21:46 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/06/29 15:48:12 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,23 @@ void	check_args(int ac, const char **av, t_cube *cub);
 /*da rivedere*/
 
 void	close_game(t_cube *cube);
+
+void	get_map_elements(t_cube *cube);
+void	get_line_elements(t_cube *cube);
+void	get_texture(t_cube *cube);
+void	get_color(t_cube *cube);
+void	set_texture(t_cube *cube, int dir, char *path);
+
+void	safe_free(void **ptr);
+void	free_matrix(char ***matrix);
+void	free_textures(t_cube *cube);
+
+void	init_cube(t_cube *cube, char *map_path);
+void	init_cube_values(t_cube *cube);
+void	init_textures(t_cube *cube);
+
+void	get_map_data(t_cube *cube, char *map_path);
+void	get_map(t_cube **cube);
 
 
 /* ========================================================================== */
