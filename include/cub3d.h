@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 19:09:34 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/29 12:57:00 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/06/30 15:52:44 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,22 +28,22 @@
 
 # ifdef __linux__
 #  include "../lib/mlx_linux/mlx.h"
-#  include "../lib/mlx_linux/mlx_int.h"
 # endif
 
-# include <fcntl.h>
+# include <errno.h>
 # include <math.h>
-# include <stdio.h>
-# include <stdlib.h>
-# include <sys/time.h>
-# include <unistd.h>
 # include <stdbool.h>
+# include <stdio.h>
+# include <string.h>
+# include <X11/X.h>
+# include <unistd.h>
 
 /* ------------  HEADER FILE INCLUDED  -------------------------------------- */
 
 # include "error_messages.h"
 # include "functions.h"
 # include "key_mapping.h"
+# include "macro.h"
 # include "resolution_config.h"
 # include "types.h"
 

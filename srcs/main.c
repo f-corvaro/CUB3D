@@ -5,18 +5,48 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/20 19:09:12 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/29 15:24:55 by fcorvaro         ###   ########.fr       */
+/*   Created: 2024/06/30 16:11:59 by fcorvaro          #+#    #+#             */
+/*   Updated: 2024/07/01 15:54:08 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
+static int	check_arguments(int ac)
+{
+	if (ac != 2)
+		return (error_exit("USAGE", INVALID_ARGS, 1));
+	return (0);
+}
+
+static int	initialize_engine(t_engine *cub, char **av)
+{
+	setup_engine(cub);
+	if (check_input_path(cub, av) != 0)
+		return (1);
+	if (init_game(cub, av) != 0)
+		return (1);
+	init_mlx(cub);
+	load_texture(cub);
+	return (0);
+}
+
+static void	run_game_loop(t_engine *cub)
+{
+	exe_raynren(cub);
+	input_handle(cub);
+	mlx_loop_hook(cub->mlx, upnren_frame, cub);
+	mlx_loop(cub->mlx);
+}
+
 int	main(int ac, char **av)
 {
-	t_cube	cub;
+	t_engine	cub;
 
-	check_args(ac, av, &cub);
-	init_cube(&cub, av[1]);
+	if (check_arguments(ac) == 1)
+		return (1);
+	if (initialize_engine(&cub, av) == 1)
+		return (1);
+	run_game_loop(&cub);
 	return (0);
 }

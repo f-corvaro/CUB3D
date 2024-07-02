@@ -1,33 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   resolution_config.h                                :+:      :+:    :+:   */
+/*   macro.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/25 22:18:40 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/07/01 15:53:56 by fcorvaro         ###   ########.fr       */
+/*   Created: 2024/06/29 19:01:57 by fcorvaro          #+#    #+#             */
+/*   Updated: 2024/07/01 15:25:28 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RESOLUTION_CONFIG_H
-# define RESOLUTION_CONFIG_H
+#ifndef MACRO_H
+# define MACRO_H
+
+# ifndef O_DIRECTORY
+#  define O_DIRECTORY 00200000
+# endif
 
 /**
- * @file resolution_config.h
- * @brief Defines the resolution configuration for the cub3d game.
+ * @def PMS
+ * Player Movement Speed (PMS) defines the speed at which the player moves.
  *
- *
- * Resolution Configuration:
- * - WIN_WIDTH: The width of the game window.
- * - WIN_HEIGHT: The height of the game window.
  */
+# define PMS 0.02
 
-# define WIN_WIDTH 1280
-# define WIN_HEIGHT 720
+/**
+ * @def PRS
+ * Player Rotation Speed (PRS) defines the speed of player's rotation.
+ */
+# define PRS 0.01
 
-# define WIN_NAME "Cub3D"
+# define NORTH 0
+# define SOUTH 1
+# define EAST 2
+# define WEST 3
 
-# define TEX_SIZE 128
+# define M_ELEM "10NSEW"
+# define P_DIR "NSEW"
 
 #endif

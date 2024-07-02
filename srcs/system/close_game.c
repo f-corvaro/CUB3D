@@ -1,34 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   exit.c                                             :+:      :+:    :+:   */
+/*   close_game.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/26 18:52:22 by fursini           #+#    #+#             */
-/*   Updated: 2024/06/29 15:20:15 by fcorvaro         ###   ########.fr       */
+/*   Created: 2024/06/30 17:45:31 by fcorvaro          #+#    #+#             */
+/*   Updated: 2024/06/30 17:49:42 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3d.h"
 
 /**
- * @brief Free all allocated memory and exit the program
+ * @brief Closes the game correctly, with normal exit.
  *
- * @param cube Struct with game data
+ *
+ * @param cub A pointer to the game engine context (`t_engine`) containing all
+ * the game state and resources.
+ * @return Always returns 0, indicating successful closure of the game.
  */
-void	close_game(t_cube *cube)
+int	close_game(t_engine *cub)
 {
-	if (!cube)
-		exit(0);
-	if (cube->fd > 0)
-		close(cube->fd);
-	free_matrix(&cube->map);
-	// safe_free((void **)&cube->map);
-	free_matrix(&cube->elements);
-	free_textures(cube);
-	mlx_destroy_display(cube->mlx);
-	safe_free((void **)&cube->mlx);
-	exit(0);
+	shutdown_cub(cub, 0);
+	return (0);
 }
-
