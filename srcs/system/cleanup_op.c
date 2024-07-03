@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cleanup_op.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: fursini <fursini@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/30 17:59:07 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/07/01 16:28:26 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/07/03 10:40:01 by fursini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /**
  * @brief Frees all texture path strings in a t_texture structure.
  *
- * Iterates over texture direction fields (ceiling, floor, north, 
+ * Iterates over texture direction fields (ceiling, floor, north,
  * south, west, east) and frees them if they are not NULL.
  *
  * @param texture Pointer to the t_texture structure to be cleaned up.
@@ -39,7 +39,7 @@ void	free_texture(t_texture *texture)
 /**
  * @brief Frees a null-terminated array of pointers (matrix).
  *
- * Iterates over each element, freeing individual rows, followed by the array 
+ * Iterates over each element, freeing individual rows, followed by the array
  * itself. Sets the matrix pointer to NULL to prevent use-after-free errors.
  *
  * @param matrix Pointer to the first element of the array.
@@ -64,7 +64,7 @@ void	free_matrix(void **matrix)
 /**
  * @brief Frees resources allocated for the map and its information.
  *
- * Closes the map file descriptor if open, 
+ * Closes the map file descriptor if open,
  * and frees the memory allocated for the map
  * and its file representation.
  *
@@ -83,7 +83,7 @@ void	free_map(t_engine *cub)
 /**
  * @brief Frees all resources allocated for the game engine.
  *
- * Releases memory for textures, texture pixels, texture information, 
+ * Releases memory for textures, texture pixels, texture information,
  * and map resources.
  * Always returns 1 to indicate completion.
  *

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   shutdown_game.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: fursini <fursini@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/30 17:47:50 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/30 18:08:20 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/07/03 10:46:32 by fursini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
  * @brief Shuts down the game engine and exits the program with the exit_code
  * provided.
  *
- * @param cub A pointer to the game engine context (`t_engine`) containing all 
- * the game state and resources. 
- * @param exit_code The exit code with which the program should terminate. 
+ * @param cub A pointer to the game engine context (`t_engine`) containing all
+ * the game state and resources.
+ * @param exit_code The exit code with which the program should terminate.
  */
 void	shutdown_cub(t_engine *cub, int exit_code)
 {

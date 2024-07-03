@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   player.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: fursini <fursini@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 12:47:49 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/07/01 16:21:42 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/07/02 21:01:40 by fursini          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 /**
  * @brief Checks if player's start position is valid.
- * 
- * Validates player's start position by ensuring it's not adjacent to 
+ *
+ * Validates player's start position by ensuring it's not adjacent to
  * whitespace. Checks positions around the player's start for whitespace.
- * 
+ *
  * @param cub Game engine state.
  * @param mm Map matrix.
  * @return true if valid, false otherwise.
@@ -41,10 +41,10 @@ static bool	is_start_position_valid(t_engine *cub, char **mm)
 
 /**
  * @brief Sets and validates player's position.
- * 
- * Finds player's start in map, sets position, and validates it. 
+ *
+ * Finds player's start in map, sets position, and validates it.
  * Replaces start position with '0' to mark as visited.
- * 
+ *
  * @param cub Game engine state.
  * @param mm Map matrix.
  * @return 0 on success, 1 on error.

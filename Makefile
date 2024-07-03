@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+         #
+#    By: fursini <fursini@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/20 18:23:13 by fcorvaro          #+#    #+#              #
-#    Updated: 2024/06/30 23:13:51 by fcorvaro         ###   ########.fr        #
+#    Updated: 2024/07/02 20:23:47 by fursini          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,7 @@ UNAME_S := $(shell uname -s)
 
 ifeq ($(UNAME_S),Linux)	# Rule for Linux system
 	MINILIBX_DIR = lib/mlx_linux/
-	MINILIBXCC = -I mlx -L $(MINILIBX_DIR) -lmlx -lm -lXext -lX11 -lz
+	MINILIBXCC = -I mlx -L $(MINILIBX_DIR) -lmlx -lm -lXext -lX11
 endif
 # ------------  MINILIBX LIBRARY PATH  --------------------------------------- #
 MINILIBX = $(MINILIBX_DIR)libmlx.a
@@ -102,7 +102,7 @@ $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
 	@mkdir -p $(@D)
 	@echo "$(START)$(BOLD);$(ITALIC);$(Y)mCompiling $< ...$(END)"
 	@$(CC) $(CFLAGS) $(LEAKS) -c $< -o $@ $(INCLUDE)
-	
+
 # ------------  INCLUDE DEPENDENCY FILES  ------------------------------------ #
 -include $(OBJS_DIR)/*.d
 
@@ -154,7 +154,7 @@ re : fclean
 
 # ------------  BONUS TARGET  ------------------------------------------------ #
 bonus:
-	
+
 
 # ------------  HELP TARGET  ------------------------------------------------- #
 help:
