@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/30 16:11:59 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/07/01 15:54:08 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/07/11 16:47:29 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,11 @@ int	main(int ac, char **av)
 {
 	t_engine	cub;
 
+	printf("%s\n", CUB_ART);
+	printf("%s\n", MSG_START);
 	if (check_arguments(ac) == 1)
 		return (1);
+	printf("%s\n", MSG_LOADING);
 	if (initialize_engine(&cub, av) == 1)
 		return (1);
 	run_game_loop(&cub);
