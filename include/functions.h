@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 22:25:42 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/07/01 16:17:03 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/07/11 16:28:01 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -148,6 +148,10 @@ int		init_game(t_engine *cub, char **av);
 
 bool	is_a_dir(char *path);
 int		check_input_path(t_engine *cub, char **av);
+
+/* system/menu.c */
+
+void	draw_control_info(t_engine *cub);
 
 /* system/shutdown_game.c*/
 

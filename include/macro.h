@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/29 19:01:57 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/07/01 15:25:28 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/07/11 16:25:19 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,8 @@
 
 # define M_ELEM "10NSEW"
 # define P_DIR "NSEW"
+
+# define YELLOW 0x00FFFF00
+# define WHITE 0x00FFFFFF
 
 #endif

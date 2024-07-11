@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/25 21:56:06 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/06/30 15:34:55 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/07/11 16:31:36 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,44 @@
 #  define ACTION_EXIT 65307
 
 # endif
+
+/* ------------  CONTROL INFORMATION TEXT  ---------------------------------- */
+
+/**
+ * @brief Menu title for the control information display.
+ */
+# define MENU_T "=== Control Information ==="
+
+/**
+ * @brief Description of the key to exit the game.
+ */
+# define CLOSE "-> ESC or Close Button: Exit the Game"
+
+/**
+ * @brief Description of rotation controls.
+ */
+# define ROTATE "--> Arrow Keys (Left/Right): Rotate (Left/Right)"
+
+/**
+ * @brief Description of movement controls.
+ */
+# define MOVE "---> WASD: Move (W: Forward, A: Left, S: Backward, D: Right)"
+
+/* ------------  CONTROL INFORMATION DISPLAY POSITION  ---------------------- */
+
+/**
+ * @brief Starting X coordinate for displaying control information.
+ */
+# define START_X 25
+
+/**
+ * @brief Starting Y coordinate for displaying control information.
+ */
+# define START_Y 20
+
+/**
+ * @brief Line spacing for displaying control information.
+ */
+# define LINE_SPACING 20
 
 #endif

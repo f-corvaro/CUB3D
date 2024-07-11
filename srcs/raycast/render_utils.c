@@ -6,7 +6,7 @@
 /*   By: fcorvaro <fcorvaro@student.42roma.it>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 11:03:26 by fcorvaro          #+#    #+#             */
-/*   Updated: 2024/07/01 16:28:26 by fcorvaro         ###   ########.fr       */
+/*   Updated: 2024/07/11 14:13:22 by fcorvaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ void	render_scene(t_engine *cub)
 		y++;
 	}
 	mlx_put_image_to_window(cub->mlx, cub->win, img.img, 0, 0);
+	draw_control_info(cub);
 	mlx_destroy_image(cub->mlx, img.img);
 }
 
