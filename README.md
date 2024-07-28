@@ -201,15 +201,9 @@ To run the program, use the following syntax:
 
 ## Provided Resources
 
-[macOS Resources](https://github.com/f-corvaro/CUB3D/tree/main/rescources_macos)
-
-[Linux Resources](https://github.com/f-corvaro/CUB3D/tree/main/resources_linux)
-
 <p align="justify">
 
-The resources provided by 42 Roma Luiss for this project are available in both the macOS and Linux folders. These resources include:
-
-- Different versions of the MinilibX library: the Sierra version for macOS and MinilibX-Linux for Linux
+The resources provided by 42 Roma Luiss for this project are available in [Resources](https://github.com/f-corvaro/CUB3D/tree/main/rescources) folder. 
 
 </p>
 
