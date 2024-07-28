@@ -16,16 +16,38 @@
 
 <h3 align="center">Index</h3>
 <p align="center">
-
-- [Introduction](#introduction)
-	- [Overview](#overview)
-	- [Visual Overview](#visual-overview)
-		- [Demonstration](#demonstration)
-		- [Key Bindings](#key-bindings)
-		- [Screenshots](#screenshots)
-- [Folder Structure](#folder-structure)
-
-
+ <a href="#introduction">Introduction</a><br>
+ <a href="#overview">Overview</a><br>
+ <a href="#visual-overview">Visual Overview</a><br>
+ <a href="#key-bindings">Key Bindings</a><br>
+ <a href="#screenshots">Screenshots</a><br>
+ <a href="#folder-structure">Folder Structure</a><br>
+ <a href="#project-requirements---mandatory-part">Project Requirements - Mandatory Part</a><br>
+ <a href="#important-guidelines">Important Guidelines</a><br>
+ <a href="#window-and-graphics-requirements">Window and Graphics Requirements</a><br>
+ <a href="#program-name">Program name</a><br>
+ <a href="#usage">Usage</a><br>
+ <a href="#scene-description-file-requirements">Scene Description File Requirements</a><br>
+ <a href="#files-to-submit">Files to Submit</a><br>
+ <a href="#allowed-external-functions">Allowed External Functions</a><br>
+ <a href="#provided-resources">Provided Resources</a><br>
+ <a href="#project-requirements---bonus-part">Project Requirements - Bonus Part</a><br>
+ <a href="#minilibx-library">MiniLibX Library</a><br>
+ <a href="#getting-started-with-minilibx">Getting Started with MiniLibX</a><br>
+ <a href="#setting-up-minilibx">Setting Up MiniLibX</a><br>
+ <a href="#including-minilibx-in-your-project">Including MiniLibX in Your Project</a><br>
+ <a href="#introduction-to-minilibx">Introduction to MiniLibX</a><br>
+ <a href="#manipulating-images-with-minilibx">Manipulating Images with MiniLibX</a><br>
+ <a href="#event-handling-in-minilibx">Event Handling in MiniLibX</a><br>
+ <a href="#window-handling-in-minilibx">Window Handling in MiniLibX</a><br>
+ <a href="#drawing-and-displaying-content-in-minilibx">Drawing and Displaying Content in MiniLibX</a><br>
+ <a href="#theoretical-background">Theoretical Background</a><br>
+ <a href="#evaluation-process">Evaluation Process</a><br>
+ <a href="#correction-sheet">Correction Sheet</a><br>
+ <a href="#developed-skills">Developed Skills</a><br>
+ <a href="#support">Support</a><br>
+ <a href="#references">References</a><br>
+ <a href="#author">Author</a><br>
 </p>
 <br>
 
@@ -33,7 +55,13 @@
 
 <p align="justify">
 
-The project is designed to be completed by a team of two students, improving collaboration and teamwork skills. Personally, I completed this project with my teammate [@ffursini](https://github.com/ffursini).
+Welcome to the world of cub3d, your ultimate raycasting engine! This project is designed to immerse you in the fascinating realm of 3D environments, where you'll explore and navigate through a maze-like world using the power of raycasting.
+
+Cub3d is a collaborative project that encourages teamwork and collaboration. It is meant to be completed by a team of two students, fostering the development of essential skills in collaboration and communication. In my case, I had the pleasure of working on this project with my teammate [@ffursini](https://github.com/ffursini).
+
+In this project, you'll dive into the world of computer graphics and learn about the fundamentals of raycasting, a technique used to create a 3D perspective in a 2D environment. You'll have the opportunity to implement various features, such as rendering walls, handling player movement, and incorporating textures to enhance the visual experience.
+
+By the end of this project, you'll have a solid understanding of raycasting and its applications in creating immersive 3D environments. So, get ready to embark on an exciting journey into the world of cub3d!
 
 </p>
 </br>
@@ -42,20 +70,27 @@ The project is designed to be completed by a team of two students, improving col
 
 <p align="justify">
 
+This project involves understanding the principles of raycasting, handling user input, and rendering graphics. It serves as a stepping stone for students to explore graphics programming and game development.
+
+Key Concepts Covered in cub3d:
+
+- **Raycasting**: Understanding the fundamentals of raycasting, including ray-object intersection and distance calculation.
+- **Graphics Programming**: Learning how to manipulate pixels, draw lines and shapes, and apply texture mapping.
+- **Mathematics**: Applying trigonometry, vector mathematics, and matrix transformations to 3D rendering.
+- **Game Loop**: Implementing a game loop for frame rendering, event handling, and timing synchronization.
+- **Memory Management**: Efficiently managing dynamic memory allocation and resource management.
+- **Software Design**: Organizing code in a modular and structured manner.
+- **User Input Handling**: Processing real-time keyboard and mouse events.
+
 </p>
 
 ### Visual Overview
 
-#### Demonstration
-
-![Program Overview]()
-
 #### Key Bindings
-![Key Bindings]()
+![Key Bindings](https://github.com/f-corvaro/CUB3D/blob/main/.extra/key.png)
 
 #### Screenshots
-![Screenshot 1]()
-![Screenshot 2]()
+![Screenshot 1](https://github.com/f-corvaro/CUB3D/blob/main/.extra/Screenshot.png)
 
 </p>
 
@@ -139,7 +174,6 @@ The project is designed to be completed by a team of two students, improving col
 │   └── Makefile
 ```
 
-
 ## Project Requirements - Mandatory Part
 
 ### Important Guidelines:
@@ -155,11 +189,20 @@ The project is designed to be completed by a team of two students, improving col
 
 </p>
 
-### Window and Graphics Management
+### Window and Graphics Requirements
 
 <p align="justify">
 
-
+- You must use the miniLibX library, either the version available on the operating system or from its sources. 
+- Ensure smooth management of your window, including tasks such as changing to another window and minimizing.
+- Implement different wall textures (your choice) that vary depending on which side the wall is facing (North, South, East, West).
+- Your program should allow setting different colors for the floor and ceiling.
+- The program should display the image in a window and adhere to the following rules:
+  - Use the left and right arrow keys to look left and right in the maze.
+  - Use the W, A, S, and D keys to move the point of view through the maze.
+  - Press ESC to close the window and quit the program cleanly.
+  - Clicking on the red cross on the window's frame should also close the window and quit the program cleanly.
+  - It is strongly recommended to use images from the minilibX library.
 
 </p>
 
@@ -174,16 +217,69 @@ The project is designed to be completed by a team of two students, improving col
 To run the program, use the following syntax:
 
 ```bash
-
+./cub3D <path/to/map.cub>
 ```
 
 </p>
 
-#### Overview
+### Scene Description File Requirements
 
 <p align="justify">
 
+Your program must take a scene description file with the `.cub` extension as its first argument.
+The map in the file must consist of only 6 possible characters:
+- 0 for an empty space.
+- 1 for a wall.
+- N, S, E, or W for the player's start position and spawning orientation.
 
+Here is an example of a valid map:
+
+```
+111111
+100101
+101001
+1100N1
+111111
+```
+
+- The map must be surrounded by walls, otherwise the program should return an error.
+- Each type of element can be separated by one or more empty lines, except for the map content which always has to be the last.
+- Each type of information for an element can be separated by one or more spaces.
+- The map must be parsed exactly as it appears in the file, including spaces within the map.
+- Each element (except the map) starts with a type identifier (one or two characters), followed by specific information for each object in a strict order. For example:
+  - North texture: `NO ./path_to_the_north_texture`
+  - South texture: `SO ./path_to_the_south_texture`
+  - West texture: `WE ./path_to_the_west_texture`
+  - East texture: `EA ./path_to_the_east_texture`
+  - Floor color: `F 220,100,0`
+  - Ceiling color: `C 225,30,0`
+
+Here is an example of the mandatory part with a minimalist `.cub` scene:
+
+```
+NO ./path_to_the_north_texture
+SO ./path_to_the_south_texture
+WE ./path_to_the_west_texture
+EA ./path_to_the_east_texture
+F 220,100,0
+C 225,30,0
+1111111111111111111111111
+1000000000110000000000001
+1011000001110000000000001
+1001000000000000000000001
+111111111011000001110000000000001
+100000000011000001110111111111111
+11110111111111011100000010001
+11110111111111011101010010001
+11000000110101011100000010001
+10000000000000001100000010001
+10000000000000001101010010001
+11000001110101011111011110N0111
+11110111 1110101 101111010001
+11111111 1111111 111111111111
+```
+
+If any misconfiguration is encountered in the file, the program should exit and return `Error\n` followed by an explicit error message of your choice.
 
 </p>
 
@@ -195,7 +291,16 @@ To run the program, use the following syntax:
 
 <p align="justify">
 
+The program requires the following functions and libraries:
 
+- File I/O functions: `open`, `close`, `read`, `write`
+- Standard I/O functions: `printf`
+- Memory management functions: `malloc`, `free`
+- Error handling functions: `perror`, `strerror`, `exit`
+- Time functions: `gettimeofday`
+- Math library functions: All functions from the math library (-lm compiler option, `man man 3 math`)
+- MiniLibX functions: All functions from the MiniLibX library
+- Custom library: `Libft` (allowed for use in the project)
 
 </p>
 
@@ -211,7 +316,15 @@ The resources provided by 42 Roma Luiss for this project are available in [Resou
 
 <p align="justify">
 
+For additional points, you can consider implementing the following elements:
 
+- Wall collisions: Add functionality to detect and handle collisions with walls in the maze.
+- Minimap system: Create a separate window or overlay that displays a smaller version of the maze as a minimap.
+- Doors: Implement doors that can open and close, allowing the player to interact with them.
+- Animated sprites: Add animated sprites to the game, such as moving enemies or objects.
+- Mouse rotation: Enable the rotation of the point of view using mouse input.
+
+Please note that these bonus features will only be evaluated if your mandatory part is perfect.
 
 </p>
 
@@ -355,7 +468,38 @@ With these functions, you can create and display various graphics and text in yo
 
 <p align="justify">
 
+In the Cub3D project, a solid understanding of mathematics is crucial, particularly in the areas of geometry and trigonometry. Raycasting, a technique used to render a 3D environment in a 2D game, heavily relies on these mathematical concepts.
+
+Raycasting involves casting rays from the player's point of view and determining the intersections of these rays with the walls of the game world. By calculating the distance between the player and each wall, we can create the illusion of depth and perspective.
+
+To achieve this, we need to use mathematical formulas such as the Pythagorean theorem to calculate distances and angles. Trigonometric functions like sine and cosine are used to determine the direction and position of the rays.
+
+The raycasting process can be broken down into the following steps:
+
+1. Determine the player's position and direction in the game world.
+2. Cast a series of rays from the player's position, covering the player's field of view.
+3. For each ray, calculate its direction and step size.
+4. Check for intersections between the ray and the walls of the game world.
+5. Calculate the distance between the player and the wall at the intersection point.
+6. Use the distance to determine the height of the wall on the screen.
+7. Draw the wall on the screen, taking into account its height and perspective.
+
+By repeating this process for each column of the screen, we can render a 3D representation of the game world.
+
+In addition to mathematics, the Cub3D project also involves parsing. Parsing is the process of analyzing a text file to extract meaningful information. In this project, we parse a map file that represents the game world.
+
+The parsing part of the project involves reading the map file, validating its contents, and extracting relevant information such as the dimensions of the map, the player's starting position, and the layout of the walls. This information is then used to generate the game world and perform raycasting calculations.
+
+To parse the map file, we need to implement algorithms that can handle different types of data, such as integers, characters, and strings. We also need to handle error cases, such as invalid map formats or missing information.
+
+In addition to the raycasting and parsing aspects, it is important to consider the camera view height and field of view (FOV). The camera view height determines the height at which the player's eyes are positioned in the game world, affecting the perspective and depth perception. The FOV determines the width of the player's field of view, influencing the amount of the game world that is visible on the screen.
+
+Understanding and properly setting the camera view height and FOV are crucial for achieving a realistic and immersive visual experience in the game.
+
+Overall, a solid understanding of mathematics, parsing techniques, camera view height, and FOV is essential for successfully implementing the raycasting and parsing parts of the Cub3D project.
+
 </p>
+<br>
 
 ## Evaluation Process
 
@@ -385,7 +529,19 @@ If you find this repository helpful, please consider starring it to show your su
 
 ## References
 
-- []()
+- [Cub3D Tutorial by Ahmed Fatir](https://medium.com/@afatir.ahmedfatir/cub3d-tutorial-af5dd31d2fcf): This tutorial provides a detailed explanation of the Cub3D project, covering topics such as raycasting, parsing, and camera view height. It is a valuable resource for understanding the implementation of the game.
+
+- [42Docs Cub3D Project Guide](https://harm-smits.github.io/42docs/projects/cub3d): This guide offers comprehensive documentation on the Cub3D project, including step-by-step instructions, code examples, and explanations of key concepts. It is a useful reference for completing the project successfully.
+
+- [MiniLibX Documentation](https://gontjarow.github.io/MiniLibX/): This documentation provides information on the MiniLibX library, which is used in the Cub3D project for window handling, event handling, and drawing graphics. It includes detailed explanations of the library's functions and usage examples.
+
+- [Xlib Documentation](https://tronche.com/gui/x/xlib/): This documentation covers Xlib, the library that MiniLibX is built upon. It provides in-depth information on Xlib's functions and features, which are relevant for understanding the underlying mechanisms of MiniLibX.
+
+- [Ray Casting Tutorial by F. Permadi](https://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/): This tutorial offers a comprehensive guide to raycasting, the technique used in Cub3D to render a 3D environment in a 2D game. It covers the mathematical concepts and algorithms involved in raycasting, making it a valuable resource for understanding the core mechanics of the project.
+
+- [Calculating Heading in 2D Games using Trigonometric Functions](https://gamecodeschool.com/essentials/calculating-heading-in-2d-games-using-trigonometric-functions-part-1/): This tutorial explains how to calculate the heading or direction of an object in a 2D game using trigonometric functions. It provides a clear explanation of the relevant mathematical concepts, which are essential for understanding the raycasting process in Cub3D.
+
+- [42Docs MiniLibX Library Guide](https://harm-smits.github.io/42docs/libs/minilibx): This guide focuses specifically on the MiniLibX library used in the Cub3D project. It provides detailed documentation on the library's functions, data structures, and usage examples, making it a valuable resource for working with MiniLibX effectively.
 
 <br>
 
