@@ -7,7 +7,6 @@
 </p>
 
 <p align="center" style="text-decoration: none;">
-    <a href="https://github.com/f-corvaro/CUB3D/blob/main/.extra/en.subject.pdf"><img alt="subject" src="https://img.shields.io/badge/subject-CUB3D-yellow" /></a>
     <a href="https://github.com/f-corvaro/CUB3D"><img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/f-corvaro/CUB3D?color=blueviolet" /></a>
     <a href="https://github.com/f-corvaro/CUB3D"><img alt="Code language count" src="https://img.shields.io/github/languages/count/f-corvaro/CUB3D?color=yellow" /></a>
     <a href="https://github.com/f-corvaro/CUB3D"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/f-corvaro/CUB3D?color=blueviolet" /></a>
@@ -42,8 +41,6 @@
  <a href="#window-handling-in-minilibx">Window Handling in MiniLibX</a><br>
  <a href="#drawing-and-displaying-content-in-minilibx">Drawing and Displaying Content in MiniLibX</a><br>
  <a href="#theoretical-background">Theoretical Background</a><br>
- <a href="#evaluation-process">Evaluation Process</a><br>
- <a href="#correction-sheet">Correction Sheet</a><br>
  <a href="#developed-skills">Developed Skills</a><br>
  <a href="#support">Support</a><br>
  <a href="#references">References</a><br>
@@ -500,14 +497,6 @@ Overall, a solid understanding of mathematics, parsing techniques, camera view h
 
 </p>
 <br>
-
-## Evaluation Process
-
-### Correction Sheet
-
-<p align="center">
-<a href="https://github.com/f-corvaro/CUB3D"><img width="650" src="https://github.com/f-corvaro/CUB3D/blob/main/.extra/cub3d_cs.jpg">
-</p>
 
 ## Developed Skills
 
